@@ -9,9 +9,10 @@ Online Quiz is a web application for candidate to appear for an
 
 
 ## Authors
+- [@Praveen Takpuriya](https://www.github.com/praveenyadavtak)
 - [@Gravish Purohit](https://www.github.com/gravishpurohit)
 - [@Harshit Raj](https://www.github.com/harshitraj12)
-- [@Praveen Takpuriya](https://www.github.com/praveenyadavtak)
+
 
   
 ## Tech Stack
