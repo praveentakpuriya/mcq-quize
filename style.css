@@ -129,7 +129,6 @@ input:focus{
     margin: 3px;
     height: 60px;
     width: 100%;
-    border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
@@ -448,8 +447,8 @@ footer button.show{
 }
 .start_btn button:hover
 {
-    color: #fff;
-    background: #007bff;
+    color:black;
+    background: lightgreen;
 }
 
 #footer
@@ -468,4 +467,213 @@ footer button.show{
 #particles-js{
     height: 100%;
     background: linear-gradient(to right, rgb(0, 42, 255), rgb(0, 255, 238));;
+}
+
+@media only screen and (max-width:350px)
+{
+    body
+    {
+        overflow-x: hidden;
+
+    }    
+    input
+    {
+        width:85vw;
+        left: 10em;
+    }
+    .start_btn
+    {
+        width: 100vw;
+    }
+    #particles-js
+    {
+        height: 110vh;
+        width: max-content;
+    }
+    .info_box
+    {
+        width:90vw;    
+        margin-top: 20px;
+    }
+    .quiz_box
+    {
+        width:98vw;    
+        margin-top: 20px;
+    }
+    .quiz_box .timer
+    {
+        margin: 10px;
+    }
+    .quiz_box .next_btn
+    {
+        margin:1px;
+    }
+    .result_box
+    {
+        width:90vw;    
+        /* height: 80vh; */
+    }
+    #footer
+    {
+        width: 100%;
+        position: absolute;
+        margin: -20px;
+        bottom: -20vw;
+        left: 20px;
+    }
+}
+@media only screen and (min-width:350px) and (max-width:550px)
+{
+    body
+    {
+        overflow-y: hidden;
+        overflow: hidden;
+        position: fixed;
+        /* width: 100%; */
+        /* scroll:'no'; */
+    }    
+    .details
+    {
+        /* left:13em; */
+        left:50vw;
+        top:45vh;
+
+    }
+    input
+    {
+        width:85vw;
+        left: 8em;
+    } 
+    /* .start_btn
+    {
+        width: 100vw;
+    } */
+    #particles-js
+    {
+        height: 150vh;
+        width: 30em;
+        overflow-x: hidden;
+    }
+    .info_box
+    {
+        width:90vw;    
+        /* left:12em; */
+        left:50vw;
+        top:45vh;
+
+
+    }
+    .quiz_box
+    {
+        width:95vw;    
+        /* left:12em; */
+        left:50vw;
+        top:45vh;
+
+
+        /* /* height:max-content; */
+    }
+    .quiz_box .timer
+    {
+        margin: 10px;
+    }
+    .quiz_box .next_btn
+    {
+        margin:1px;
+    }
+    .result_box
+    {
+        width:90vw;    
+        left:50vw;
+        top:45vh;
+        /* align-items: center; */
+        /* margin: auto auto; */
+        /* height: 80vh; */
+    }
+    #footer
+    {
+        width: 100vw;
+        position: fixed;
+        /* margin: -20px;
+        bottom: -20vw; */
+        /* left: 20px; */
+    }
+}
+@media only screen and (min-width:550px) and (max-width:900px)
+{
+    body
+    {
+        overflow-x: hidden;
+        /* overflow: hidden; */
+        /* position: fixed; */
+        /* width: 100%; */
+        /* scroll:'no'; */
+    }    
+    .details
+    {
+        /* left:13em; */
+        left:50vw;
+        top:50vh;
+
+    }
+    input
+    {
+        width:75vw;
+        left: 0.5vw;
+    } 
+    /* .start_btn
+    {
+        width: 100vw;
+        left: 2vw;
+    } */
+    #particles-js
+    {
+        height: 150vh;
+        width: 50em;
+        overflow-x: hidden;
+    }
+    .info_box
+    {
+        width:90vw;    
+        /* left:12em; */
+        left:50vw;
+        top:50vh;
+
+
+    }
+    .quiz_box
+    {
+        width:80vw;    
+        /* left:12em; */
+        left:23em;
+        top:70vh;
+        /* height: 70vw; */
+
+        /* /* height:max-content; */
+    }
+    .quiz_box .timer
+    {
+        margin: 10px;
+    }
+    .quiz_box .next_btn
+    {
+        margin:1px;
+    }
+    .result_box
+    {
+        width:50vw;    
+        left:24em;
+        top:55vh;
+        /* align-items: center; */
+        /* margin: auto auto; */
+        /* height: 90vh; */
+    }
+    #footer
+    {
+        width: 100%;
+        position: fixed;
+         /* margin: -20px; */
+        bottom: 0; 
+        /* left: 20px; */
+    }
 }

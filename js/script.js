@@ -69,7 +69,7 @@ continue_btn.onclick = ()=>
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(15); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
-    
+
 }
 
 let timeValue =  15;
@@ -219,7 +219,7 @@ function showResult(){
             message =>{
                 //console.log (message);
                 if(message=='OK'){
-                alert('Your mail has been send. Thank you for giving Test.');
+                alert("Your Result's Status has been sent on your Mail ID. Thank you for giving Test.");
                 }
                 else{
                     console.error (message);
@@ -242,10 +242,22 @@ function startTimer(time){
             timeCount.textContent = "0" + addZero; //add a 0 before time value
         }
         if(time < 0){ //if timer is less than 0
-            clearInterval(counter); //clear counter
-            timeText.textContent = "Time Off"; //change the time text to time off
-            const allOptions = option_list.children.length; //getting all option items
-            let correcAns = questions[que_count].answer; //getting correct answer from array
+            if(que_count < questions.length - 1){ //if question count is less than total question length
+                que_count++; //increment the que_count value
+                que_numb++; //increment the que_numb value
+                showQuetions(que_count); //calling showQestions function
+                queCounter(que_numb); //passing que_numb value to queCounter
+                clearInterval(counter); //clear counter
+                clearInterval(counterLine); //clear counterLine
+                startTimer(timeValue); //calling startTimer function
+                startTimerLine(widthValue); //calling startTimerLine function
+                timeText.textContent = "Time Left"; //change the timeText to Time Left
+                next_btn.classList.remove("show"); //hide the next button
+            }else{
+                clearInterval(counter); //clear counter
+                clearInterval(counterLine); //clear counterLine
+                showResult(); //calling showResult function
+            }
             for(i=0; i < allOptions; i++){
                 if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
                     console.log("Time Off: Auto selected correct answer.");
